@@ -47,11 +47,7 @@ function App() {
       <div>
         <h2>Connect</h2>
         {connectors.map((connector) => (
-          <button
-            key={connector.uid}
-            onClick={() => connect({ connector })}
-            type="button"
-          >
+          <button key={connector.uid} onClick={() => connect({ connector })}>
             {connector.name}
           </button>
         ))}
