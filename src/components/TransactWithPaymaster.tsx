@@ -22,7 +22,7 @@ export function TransactWithPaymaster() {
     ) {
       return {
         paymasterService: {
-          url: process.env.PAYMASTER_PROXY_SERVER_URL || `${document.location.origin}/api/paymaster`,
+          url: `https://api.pimlico.io/v2/${account.chainId}/rpc?apikey=${process.env.NEXT_PUBLIC_PIMLICO_API_KEY}`,
         },
       };
     }

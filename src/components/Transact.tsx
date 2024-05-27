@@ -36,7 +36,7 @@ export function Transact() {
             });
           }}
         >
-          Mint
+          Mint 2 times
         </button>
         {id && <CallStatus id={id} />}
       </div>
