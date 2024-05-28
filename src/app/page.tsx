@@ -7,6 +7,7 @@ import { SignMessage } from "@/components/SignMessage";
 import { TypedSign } from "@/components/TypedSign";
 import { Permit2 } from "@/components/Permit2";
 import { TransactWithPaymaster } from "@/components/TransactWithPaymaster";
+import { SendCalls } from "@/components/SendCalls";
 
 const abi = [
   {
@@ -56,6 +57,7 @@ function App() {
       </div>
       {account.address && (
         <div>
+          <SendCalls />
           <Transact />
           <TransactWithPaymaster />
           <SignMessage />
