@@ -58,11 +58,11 @@ function App() {
       {account.address && (
         <div>
           <SendCalls />
-          <Transact />
+          {/* <Transact />
           <TransactWithPaymaster />
           <SignMessage />
           <TypedSign />
-          <Permit2 chainId={account.chainId!} />
+          <Permit2 chainId={account.chainId!} /> */}
         </div>
       )}
     </>
